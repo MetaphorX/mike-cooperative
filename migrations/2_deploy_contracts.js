@@ -1,5 +1,5 @@
-const DominionDAO = artifacts.require('DominionDAO')
+const CooperativeBlockchain = artifacts.require('CooperativeBlockchain')
 
 module.exports = async function (deployer) {
-  await deployer.deploy(DominionDAO)
+  await deployer.deploy(CooperativeBlockchain)
 }

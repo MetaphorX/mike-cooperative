@@ -1,6 +1,6 @@
 import Web3 from 'web3'
 import { setGlobalState, getGlobalState } from './store'
-import abi from './abis/DominionDAO.json'
+import abi from './abis/CooperativeBlockchain.json'
 
 const { ethereum } = window
 window.web3 = new Web3(ethereum)

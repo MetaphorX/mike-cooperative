@@ -10,6 +10,7 @@ import {
 import Header from './components/Header'
 import Home from './views/Home'
 import Proposal from './views/Proposal'
+import Signup from './views/Signup'
 
 const App = () => {
   const [loaded, setLoaded] = useState(false)
@@ -25,7 +26,8 @@ const App = () => {
       <Header />
       {loaded ? (
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Signup />} />
           <Route path="/proposal/:id" element={<Proposal />} />
         </Routes>
       ) : null}

@@ -32,7 +32,7 @@ const Banner = () => {
         {opened()} Proposal{opened() == 1 ? '' : 's'} Currently Opened
       </h2>
       <p>
-        Current DAO Balance: <strong>{balance} Eth</strong> <br />
+        Current Cooperative Balance: <strong>{balance} Eth</strong> <br />
         Your contributions:{' '}
         <span>
           <strong>{mybalance} Eth</strong>
@@ -43,7 +43,7 @@ const Banner = () => {
       <p>
         {isStakeholder
           ? 'You can now raise proposals on this platform 😆'
-          : 'Hey, when you contribute upto 1 ether you become a stakeholder 😎'}
+          : 'Hey, when you contribute upto 0.001 ether you become a stakeholder 😎'}
       </p>
       <div className="flex flex-row justify-start items-center md:w-1/3 w-full mt-4">
         <input
